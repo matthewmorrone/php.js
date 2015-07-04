@@ -1,0 +1,39 @@
+{
+  "name": "php.js",
+  "version": "0.1.1",
+  "description": "Use phpjs functions as required.",
+  "main": "tools/export.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "phpjs": ">=1.3.2"
+  },
+  "keywords": [
+    "phpjs"
+  ],
+  "author": {
+    "name": "YJC"
+  },
+  "_id": "php.js@0.1.1",
+  "_shasum": "2391856df5c465adcb62ba65d3895c348c7f239d",
+  "_from": "php.js@*",
+  "_npmVersion": "2.3.0",
+  "_nodeVersion": "0.11.16",
+  "_npmUser": {
+    "name": "yangjc",
+    "email": "yangjiecong@live.com"
+  },
+  "maintainers": [
+    {
+      "name": "yangjc",
+      "email": "yangjiecong@live.com"
+    }
+  ],
+  "dist": {
+    "shasum": "2391856df5c465adcb62ba65d3895c348c7f239d",
+    "tarball": "http://registry.npmjs.org/php.js/-/php.js-0.1.1.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/php.js/-/php.js-0.1.1.tgz"
+}
