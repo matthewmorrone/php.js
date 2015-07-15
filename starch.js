@@ -59,15 +59,16 @@ Object.prototype.extend({
     return Object.getOwnPropertyDescriptor(this, a)
   },
   "getPropertyDescriptors": function() {
-    var result = {}
-    Object.getOwnPropertyNames(this).each(function(a, b) {
-      result[a] = Object.getOwnPropertyDescriptor(this, a)
-    }, this)
+    var result = {}; that = this;
+    Object.getOwnPropertyNames(that).each(function(a, b) {
+      result[a] = Object.getOwnPropertyDescriptor(that, a)
+    }, that)
     return result
   },
   "each": function(f) {
-    for (var i in this) {
-      f && this.hasProperty(i) && f.call(this, this[i], i)
+    var that = this;
+    for (var i in that) {
+      f && that.hasProperty(i) && f.call(that, that[i], i)
     }
     return this
   },
@@ -75,7 +76,8 @@ Object.prototype.extend({
     return alert(this)
   },
   "toString": function() {
-    return Object.prototype.toString.call(this)
+    var that = this;
+    return Object.prototype.toString.call(that)
   }
 })
 Object.prototype.define("forEach", function(callback, scope) {
